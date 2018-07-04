@@ -1,0 +1,63 @@
+servers : 10.0.0.8:11212
+threads count: 49
+concurrency: 49
+run time: 30s
+windows size: 10k
+set proportion: set_prop=0.01
+get proportion: get_prop=0.99
+[1;1H[2J
+Get Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   30       541302       18043        2.5        0          160      176005     2689       3262.07    1626.05
+Global   30       541302       18043        2.5        0          160      176005     2689       3262.07    1626.05
+
+Set Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   30       5492         183          0.0        0          214      27705      2796       2961.05    1669.46
+Global   30       5492         183          0.0        0          214      27705      2796       2961.05    1669.46
+
+Total Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   30       546794       18226        2.5        0          160      176005     2690       3259.26    1626.48
+Global   30       546794       18226        2.5        0          160      176005     2690       3259.26    1626.48
+
+Get Statistics (541351 events)
+   Min:       160
+   Max:    176005
+   Avg:      2689
+   Geo:   1626.29
+   Std:   3262.80
+   Log2 Dist:
+       8:      541    35199   192118   138996
+      12:    35986   118036    19948      465
+      16:       13        0       49
+
+Set Statistics (5492 events)
+   Min:       214
+   Max:     27705
+   Avg:      2796
+   Geo:   1669.46
+   Std:   2961.05
+   Log2 Dist:
+       8:        9      335     1969     1355
+      12:      332     1229      257        6
+
+Total Statistics (546843 events)
+   Min:       160
+   Max:    176005
+   Avg:      2691
+   Geo:   1626.72
+   Std:   3259.16
+   Log2 Dist:
+       8:      550    35534   194087   140351
+      12:    36318   119265    20205      471
+      16:       13        0       49
+
+cmd_get: 541399
+cmd_set: 5493
+get_misses: 0
+written_bytes: 12788442
+read_bytes: 89366851
+object_bytes: 790992
+
+Run time: 30.1s Ops: 546892 TPS: 18154 Net_rate: 3.2M/s
